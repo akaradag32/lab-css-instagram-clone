@@ -7,4 +7,115 @@ light blue: #1c5380
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  z-index: 1;
 }
+
+#phone-img{
+  background-image: url(/images/phones.png);
+  width: 70%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;  
+}
+
+#container{
+  height: 40%;
+  width: 100%;
+  background: linear-gradient(0, #fff 50%, #06365f 50%, #1c5380 90%);
+  z-index: -1;
+}
+
+.login{
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(0, #06365f 20%, #1c5380 50%);
+  border-radius: 12px;
+  margin: 0 30px;
+  flex-direction: row;
+  height: 50px;
+}
+
+.login img{
+  padding: 10px;
+}
+
+.login p{
+  padding-right: 10px;
+  color: #fff;
+}
+
+#main{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 4vw;
+}
+
+#info{
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+}
+
+.content{
+  margin: 0 5%;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px -20px 60px -40px;
+}
+
+.down-header{
+  font-size: 2rem;
+  line-height: 1;
+  font-family: cursive;
+  color: #0e375d;
+  margin: 10px 15px;
+}
+
+.content p{
+  font-size: 0.8rem;
+  margin: 10px 15px;
+}
+
+#download{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px;
+}
+
+footer{
+  display: flex;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+  margin: 0 10px;
+  font-size: 10px
+}
+
+footer p{
+  color: grey;
+  font-size: 10px
+}
+
+@media screen and (max-width: 400px) {
+  #main{
+    flex-direction: column;
+  }
+} 
